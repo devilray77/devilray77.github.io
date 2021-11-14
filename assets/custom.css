@@ -382,7 +382,7 @@ nav figure.background-img {
 
 @media (max-width: 998px) {
     nav .logo img {
-        height: 100px;
+        height: 120px;
     }
 
     .standard-room:before {
