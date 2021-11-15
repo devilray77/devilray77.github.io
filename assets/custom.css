@@ -57,6 +57,10 @@ body {
 
 a { transition: .4s;}
 
+.header p a:hover {
+    color: #fff;
+}
+
 .flickity-prev-next-button.previous {
     left: 10%;
     background-image: url(/assets/img/carousel-arrow--previous.svg);
@@ -205,6 +209,10 @@ a { transition: .4s;}
 
 .text-green-50 {
     color: var(--green-50);
+}
+
+.text-cream {
+    color: var(--cream);
 }
 
 .bg-cream-25 {
@@ -362,6 +370,14 @@ nav figure.background-img {
 
 .standard-room {
     z-index: 2;
+    background-image: url(/assets/img/bg-dots.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: bottom -50px right 20%;
+}
+
+.coming-soon {
+    z-index: 2;
 }
 
 .standard-room:before {
@@ -372,12 +388,39 @@ nav figure.background-img {
     height: 70%;
     right: 0;
     width: 55%;
-    background-color: var(--cream-50);
+    background-color: var(--cream-25);
+    z-index: -1;
+}
+
+.coming-soon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 65%;
+    background-color: var(--cream-25);
     z-index: -1;
 }
 
 .standard-list > div {
     margin-bottom:20px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:75.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 @media (max-width: 998px) {
@@ -393,7 +436,19 @@ nav figure.background-img {
         height: 100%;
         right: 0;
         width: 100%;
-        background-color: var(--cream-50);
+        background-color: var(--cream-25);
+        z-index: -1;
+    }
+
+    .coming-soon:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        right: 0;
+        width: 100%;
+        background-color: var(--cream-25);
         z-index: -1;
     }
 }
