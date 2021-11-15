@@ -44,6 +44,7 @@
     --cream-75: #C8C3B5;
     --cream-50: #D8D4C9;
     --cream-25: #E9E6E0;
+    --burgundy: #800020;
   }
 
 html { 
@@ -236,6 +237,12 @@ a { transition: .4s;}
     background-blend-mode: multiply;
 }
 
+.overlay-leaf-tr {
+    background: url(/assets/img/shadow-leaf-tr.png) top right no-repeat var(--cream-25);
+    background-blend-mode: multiply;
+    background-size: contain;
+}
+
 .carousel .img-con {
     width: 84%;
     padding-top: 52.9%;
@@ -423,7 +430,45 @@ nav figure.background-img {
     position:absolute;
 }
 
+.circles {
+    display: flex;
+    position: absolute;
+    right:7%;
+    top:7%;
+    transform: rotate(10deg);
+    transition: .4s;
+  }
+  .circle-with-text {
+    background: var(--burgundy);
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    margin: 5px 20px;
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    height: 180px;
+    width: 180px;
+    color: #fff;
+  }
+  .multi-line-text {
+    font-size: 20px;
+    line-height: 24px;
+    flex-direction: column;
+  }
+
 @media (max-width: 998px) {
+
+    .circles {
+        top: -80px;
+        right:0px;
+        -webkit-transform : rotate(10deg) scale(0.85); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform     : rotate(10deg) scale(0.85); /* IE 9 */
+        transform         : rotate(10deg) scale(0.85); /* Firefox 16+, IE 10+, Opera */
+    }
+
+
     nav .logo img {
         height: 120px;
     }
@@ -454,8 +499,6 @@ nav figure.background-img {
 }
 
 @media (min-width: 1016px) {
-
-
 
     .scroll-bottom {
         display: block;
