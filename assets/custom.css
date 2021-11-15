@@ -56,7 +56,70 @@ body {
     color: var(--main-text);
 }
 
-a { transition: .4s;}
+a { transition: .4s; text-decoration: none; color: var(--burgundy);}
+
+a:hover {
+    color: var(--burgundy);
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--green);
+}
+
+.btn-primary:hover {
+    background-color: var(--green-50);
+}
+
+.btn-back.back-to-top {
+    display: block;
+    font-size: 15px;
+    font-size: .9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-back.back-to-top, .btn.footer {
+    bottom: 0;
+    width: 100%;
+    z-index: 998;
+    text-transform: uppercase;
+    padding: 11.5px 50px;
+}
+
+.btn-back:hover {
+    border: 1px solid #4c4d4d;
+    background-color: #4c4d4d;
+    color: #fff;
+}
+.btn-back {
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    color: #fff;
+    font-size: 14px;
+    font-size: .875rem;
+    padding: 16px 50px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    letter-spacing: .0625rem;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
 
 .header p a:hover {
     color: #fff;
@@ -220,9 +283,18 @@ a { transition: .4s;}
     background-color: var(--cream-25);
 }
 
+.bg-cream-50 {
+    background-color: var(--cream-50);
+}
+
 .bg-green {
     background-color: var(--green);
 }
+
+.bg-green-25 {
+    background-color: var(--green-25);
+}
+
 
 .bg-green-75 {
     background-color: var(--green-75);
@@ -392,7 +464,7 @@ nav figure.background-img {
     position: absolute;
     top: 0;
     bottom: 0;
-    height: 70%;
+    height: 75%;
     right: 0;
     width: 55%;
     background-color: var(--cream-25);
