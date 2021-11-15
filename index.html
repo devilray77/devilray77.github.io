@@ -264,7 +264,7 @@
 
                         <!-- Carousel -->
                         <div class="w-100">
-                            <div class="carousel">
+                            <div class="carousel d">
                                 <div class="slide">
                                     <div class="img-con lazy" data-bg="/assets/img/gym.jpg">
                                         <a href="/assets/img/gym.jpg" data-fancybox="gallery"></a>
@@ -387,7 +387,7 @@
                         <img class="lazy img-fluid" src="/assets/img/lets-talk.png" data-src="" alt="">
                     </div>
                     <div class="col-lg-4 content text-start">
-                        <div class="inner pt-5 pt-lg-0 ps-4">
+                        <div class="inner pt-5 pt-lg-0 ps-lg-4">
                             <div class="subtitle mb-3 ">
                                 Let's Talk                           
                             </div>
@@ -397,7 +397,7 @@
                             <div class="description mb-4">
                                 <p>Our team of professionals are here to help you realise the full potential of your outdoor space – whatever size or budget.</p>
                             </div>
-                            <p class="fw-bold mb-0 lh-sm h5">Call us on <a href="tel:07740102040" class="text-green-50">07740 102040</a> or email <a href="mailto:steve.gresswell@makeroomoutside.co.uk" class="text-green-50">steve.gresswell@makeroomoutside.co.uk</a></p>
+                            <p class="fw-bold mb-0 lh-sm h5">Call us on <a href="tel:07740102040" class="text-green-50">07740 102040</a> or email <a href="mailto:steve.gresswell@makeroomoutside.co.uk" class="text-green-50 text-break">steve.gresswell@makeroomoutside.co.uk</a></p>
                         </div>
                     </div>
                 </div>
@@ -427,6 +427,12 @@
         progress = Math.max( 0, Math.min( 1, progress ) );
         progressBar.style.width = progress * 100 + '%';
     });
+
+    
+    $( window ).on( "load", function() {
+        flkty.resize();
+    });
+
 </script>
 
 </body>
